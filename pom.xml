@@ -4,32 +4,21 @@
 
     <groupId>edu.ycp.cs.dh</groupId>
     <artifactId>acegwt.root</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <name>AceGWT</name>
     <url>https://github.com/daveho/AceGWT</url>
 
-    <profiles>
+    <modules>
+        <module>AceGWT</module>
+        <module>AceGWTDemo</module>
+    </modules>
 
-        <profile>
-            <id>AceGWT</id>
-            <modules>
-                <module>AceGWT</module>
-            </modules>
-        </profile>
-
-        <profile>
-            <id>AceGWT Demo</id>
-            <modules>
-                <module>AceGWTDemo</module>
-            </modules>
-        </profile>
-
-    </profiles>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.gwt.version>2.5.0</project.gwt.version>
+        <project.gwt.version>2.7.0</project.gwt.version>
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
     </properties>
 
